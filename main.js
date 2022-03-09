@@ -67,13 +67,13 @@ function buildVars(){
         back: &quot;http://vignette4.wikia.nocookie.net/pokemon/images/5/5b/Pikachu_Back_XY.gif/revision/latest?cb=20141009080948&quot;
       },
       hp: {
-        current: 500,
-        total: 500
+        current: 5000,
+        total: 5000
       },
       attacks: [
         {
           name: &quot;thunder jolt&quot;,
-          hp: randomNum(40,20),
+          hp: randomNum(340,470),
           avail: {
             total: 30,
             remaining: 30
@@ -81,15 +81,15 @@ function buildVars(){
         },
         {
           name: &quot;electro ball&quot;,
-          hp: randomNum(60,45),
+          hp: randomNum(120,730),
           avail: {
-            total: 10,
-            remaining: 10
+            total: 1,
+            remaining: 1
           }
         },
         {
           name: &quot;volt tackle&quot;,
-          hp: randomNum(75,60),
+          hp: randomNum(60,370),
           avail: {
             total: 5,
             remaining: 5
@@ -97,7 +97,7 @@ function buildVars(){
         },
         {
           name: &quot;thunder crack&quot;,
-          hp: randomNum(160, 130),
+          hp: randomNum(170, 450),
           avail: {
             total: 2,
             remaining: 2
@@ -116,8 +116,8 @@ function buildVars(){
         back: &quot;http://vignette1.wikia.nocookie.net/pokemon/images/2/23/Charmander_Back_XY.gif/revision/latest?cb=20141009063457&quot;
       },
       hp: {
-        current: 500,
-        total: 500
+        current: 5000,
+        total: 5000
       },
       attacks: [
         {
@@ -165,8 +165,8 @@ function buildVars(){
         back: &quot;http://vignette3.wikia.nocookie.net/pokemon/images/d/d8/Squirtle_XY_Back_Sprite.gif/revision/latest?cb=20141031154426&quot;
       },
       hp: {
-        current: 500,
-        total: 500
+        current: 5000,
+        total: 5000
       },
       attacks: [
         {
@@ -216,8 +216,8 @@ function buildVars(){
         sleep: &quot;https://31.media.tumblr.com/4dd7682db26ac687ef81f0dd06794652/tumblr_msesq5uAIk1r93jsro1_500.gif&quot;
       },
       hp: {
-        current: 500,
-        total: 500
+        current: 5000,
+        total: 5000
       },
       attacks: [
         {
@@ -265,8 +265,8 @@ function buildVars(){
         back:  &quot;http://pokeunlock.com/wp-content/uploads/2015/01/machop-2.gif&quot;
       },
       hp: {
-        current: 500,
-        total: 500
+        current: 5000,
+        total: 5000
       },
       attacks: [
         {
