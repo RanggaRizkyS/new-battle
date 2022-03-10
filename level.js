@@ -12,6 +12,12 @@ function buttonAttack() {
 	var succes = hp_enemy -= attack;
 	document.getElementById("result").innerHTML = "you hit enemy with"+attack+" damage, now enemy have"+succes+"healt";
 	setTimeout(() => { hp_player -= enemyAttack; var failed = hp_player -= enemyAttack; document.getElementById("result").innerHTML = "enemy hit you with"+enemyAttack+" damage, now you have"+failed+"healt"; }, 2000);
+	if (hp_player < 0) {
+	    document.getElementById("result").innerHTML = "Defeat";
+    }
+    if (hp_enemy < 0) {
+	    document.getElementById("result").innerHTML = "Win";
+    }
 }
 
 if (hp_player < 0) {
