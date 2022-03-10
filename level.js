@@ -1,11 +1,12 @@
 var level = 1;
 var xp = 0;
-document.getElementById("hp_player").innerHTML = hp_player;
-document.getElementById("hp_enemy").innerHTML = hp_enemy;
+let attack = Math.floor(Math.random() * 100) + 349;
+let heal = Math.floor(Math.random() * 100) + 240;
 
 function buttonAttack() {
 	hp_enemy -= attack;
-	document.getElementById("hp_player").innerHTML = hp_player;
+	var succes = hp_enemy -= attack;
+	document.getElementById("levelUp").innerHTML = "you hit enemy with"+attack+" damage, now enemy have"+succes+"healt";
 }
 
 if (level === 1) {
