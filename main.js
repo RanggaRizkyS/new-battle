@@ -106,8 +106,5 @@ if (level === 10) {
 }
 
 if (level === 11) {
-	document.getElementById("levelUp").innerHTML = "level max";
+	document.getElementById("levelUp").innerHTML = "level max"
 }
-
-document.getElementById("hp_player").innerHTML = hp_player;
-document.getElementById("hp_enemy").innerHTML = hp_enemy;
