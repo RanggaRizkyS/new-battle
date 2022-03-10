@@ -1,7 +1,5 @@
 var level = 1;
 var xp = 0;
-let attack = Math.floor(Math.random() * 100) + 349;
-let heal = Math.floor(Math.random() * 100) + 240;
 
 if (level === 1) {
 	if (xp > 500) {
