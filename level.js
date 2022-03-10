@@ -6,7 +6,7 @@ let heal = Math.floor(Math.random() * 100) + 240;
 function buttonAttack() {
 	hp_enemy -= attack;
 	var succes = hp_enemy -= attack;
-	document.getElementById("levelUp").innerHTML = "you hit enemy with"+attack+" damage, now enemy have"+succes+"healt";
+	document.getElementById("result").innerHTML = "you hit enemy with"+attack+" damage, now enemy have"+succes+"healt";
 }
 
 if (level === 1) {
