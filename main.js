@@ -7,6 +7,7 @@ let heal = Math.floor(Math.random() * 100) + 240;
 
 function buttonAttack() {
 	hp_enemy -= attack;
+	
 }
 
 if (level === 1) {
