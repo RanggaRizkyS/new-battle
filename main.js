@@ -11,7 +11,7 @@ if (level === 1) {
 		xp = 0;
 		console.log(level);
 		console.log(xp);
-		document.getElementById("levelUp").innerHTML = "congratulations, level up to level 2";
+		document.getElementById("levelUp").innerHTML = level;
 	}
 }
 
