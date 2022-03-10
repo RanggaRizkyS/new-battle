@@ -3,6 +3,11 @@ var xp = 0;
 document.getElementById("hp_player").innerHTML = hp_player;
 document.getElementById("hp_enemy").innerHTML = hp_enemy;
 
+function buttonAttack() {
+	hp_enemy -= attack;
+	document.getElementById("hp_player").innerHTML = hp_player;
+}
+
 if (level === 1) {
 	if (xp > 500) {
 		level++;
