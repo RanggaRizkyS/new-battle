@@ -3,11 +3,11 @@ var hp_player = 1000;
 var hp_enemy = 1000;
 var level = 1;
 var xp = 0;
-var attack = Math.round(Math.random()*25)+120;
 var heal = Math.floor(Math.random() * 10) + 70;
 let enemyAttack = Math.floor(Math.random() * 20) + 120;
 
 function buttonAttack() {
+	var attack = Math.round(Math.random()*25)+120;
 	hp_enemy -= attack;
 	var succes = hp_enemy -= attack;
 	document.getElementById("result").innerHTML = "you hit enemy with"+attack+" damage, now enemy have"+succes+"healt";
