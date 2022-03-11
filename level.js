@@ -1,18 +1,17 @@
 
-var hp_player = 1000;
-var hp_enemy = 1000;
+var hp_player = 100;
+var hp_enemy = 100;
 var level = 1;
 var xp = 0;
 var heal = Math.floor(Math.random() * 10) + 70;
-let enemyAttack = Math.floor(Math.random() * 20) + 120;
 
 function buttonAttack() {
-	var attack = Math.round(Math.random()*25)+120;
+	var attack = Math.round(Math.random()*10)+10;
+	var enemyAttack = Math.floor(Math.random() * 10) + 10;
 	hp_enemy -= attack;
 	var succes = hp_enemy -= attack;
-	document.getElementById("result").innerHTML = "you hit enemy with"+attack+" damage, now enemy have"+succes+"healt";
-	setTimeout(() => { hp_player -= enemyAttack; var failed = hp_player -= enemyAttack; document.getElementById("result").innerHTML = "enemy hit you with"+enemyAttack+" damage, now you have"+failed+"healt"; }, 300);
-	setTimeout(() => { if (hp_player < 0) { document.getElementById("result").innerHTML = "Defeat"; document.getElementById("option").style.display = "none"; }; if (hp_enemy < 0) { document.getElementById("result").innerHTML = "Win"; document.getElementById("option").style.display = "none"; }; }, 400);
+	document.getElementById("result").innerHTML = "you hit enemy with "+attack+" damage, now enemy have "+succes+" healt";
+	setTimeout(() => { if (hp_player < 0) { document.getElementById("result").innerHTML = "Defeat"; document.getElementById("option").style.display = "none"; }; if (hp_enemy < 0) { document.getElementById("result").innerHTML = "Win"; document.getElementById("option").style.display = "none"; }; hp_player -= enemyAttack; var failed = hp_player -= enemyAttack; document.getElementById("result").innerHTML = "enemy hit you with"+enemyAttack+" damage, now you have"+failed+"healt"; }, 300);
 }
 
 
