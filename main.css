@@ -5,3 +5,7 @@ body {
 .game-container {
 	margin-top: 60px;
 }
+
+.result {
+	margin-top: 15px;
+}
