@@ -11,7 +11,7 @@ function buttonAttack() {
 	hp_enemy -= attack;
 	var succes = hp_enemy -= attack;
 	document.getElementById("result").innerHTML = "you hit enemy with "+attack+" damage, now enemy have "+succes+" healt";
-	setTimeout(() => { if (hp_player < 0) { document.getElementById("result").innerHTML = "Defeat"; document.getElementById("option").style.display = "none"; }; if (hp_enemy < 0) { document.getElementById("result").innerHTML = "Win"; document.getElementById("option").style.display = "none"; }; hp_player -= enemyAttack; var failed = hp_player -= enemyAttack; document.getElementById("result").innerHTML = "enemy hit you with"+enemyAttack+" damage, now you have"+failed+"healt"; if (hp_player < 0) { document.getElementById("result").innerHTML = "Defeat"; document.getElementById("option").style.display = "none"; }; if (hp_enemy < 0) { document.getElementById("result").innerHTML = "Win"; document.getElementById("option").style.display = "none"; }; }, 300);
+	setTimeout(() => { if (hp_player < 0) { document.getElementById("result").innerHTML = "Defeat"; document.getElementById("option").style.display = "none"; }; if (hp_enemy < 0) { document.getElementById("result").innerHTML = "Win"; document.getElementById("option").style.display = "none"; }; hp_player -= enemyAttack; var failed = hp_player -= enemyAttack; document.getElementById("result").innerHTML = "enemy hit you with"+enemyAttack+" damage, now you have"+failed+"healt"; if (hp_player < 0) { document.getElementById("result").innerHTML = "Defeat"; document.getElementById("option").style.display = "none"; }; if (hp_enemy < 0) { document.getElementById("result").innerHTML = "Win"; document.getElementById("option").style.display = "none"; }; }, 1000);
 }
 
 
