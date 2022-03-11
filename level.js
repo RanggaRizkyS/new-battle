@@ -15,13 +15,6 @@ function buttonAttack() {
 	setTimeout(() => { if (hp_player < 0) { document.getElementById("result").innerHTML = "Defeat"; }; if (hp_enemy < 0) { document.getElementById("result").innerHTML = "Win"; }; }, 400);
 }
 
-if (hp_player < 0) {
-	document.getElementById("result").innerHTML = "Defeat";
-}
-
-if (hp_enemy < 0) {
-	document.getElementById("result").innerHTML = "Win";
-}
 
 if (level === 1) {
 	if (xp > 500) {
