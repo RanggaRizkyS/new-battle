@@ -4,6 +4,12 @@ var hp_enemy = 100;
 var level = 1;
 var xp = 0;
 var heal = Math.floor(Math.random() * 10) + 70;
+if (hp_player < 0) {
+		hp_player = 0
+	};
+	if (hp_enemy < 0) {
+		hp_enemy = 0
+	};
 
 function buttonAttack() {
 	var attack = Math.round(Math.random()*10)+10;
