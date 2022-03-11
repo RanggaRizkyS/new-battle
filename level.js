@@ -3,7 +3,7 @@ var hp_player = 1000;
 var hp_enemy = 1000;
 var level = 1;
 var xp = 0;
-var attack = Math.floor(Math.random() * 25) + 120;
+var attack = Math.round(Math.random() * 25) + 120;
 var heal = Math.floor(Math.random() * 10) + 70;
 let enemyAttack = Math.floor(Math.random() * 20) + 120;
 
